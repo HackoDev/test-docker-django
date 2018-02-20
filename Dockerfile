@@ -3,7 +3,6 @@ RUN mkdir /app
 WORKDIR /app/
 ADD blog /app/blog
 ADD manage.py /app/
-ADD db.sqlite3 /app/
 COPY entrypoint.sh /app/
 RUN ls -la
 COPY requirements.txt /app/
